@@ -5,19 +5,26 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    android:paddingTop="100dp"
+    android:background="@drawable/login"
+    android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:paddingBottom="10dp"/>
 
     <EditText
         android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="#EBECF2"
+        android:paddingBottom="10dp"
+        android:textColorHint="#EBECF2"
         android:hint="Name"
         android:inputType="textPersonName"
-
         android:text="" />
 
     <EditText
@@ -25,12 +32,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="#EBECF2"
+        android:paddingBottom="10dp"
         android:hint="Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteY="46dp" />
+        android:textColorHint="#EBECF2"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnLogin"
+        android:paddingBottom="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -39,8 +49,9 @@
     <TextView
         android:id="@+id/tvinfo"
         android:layout_width="wrap_content"
+        android:paddingTop="10dp"
         android:layout_height="wrap_content"
         android:text="No of attempts"
+        android:textColor="#EBECF2"
         tools:layout_editor_absoluteY="139dp" />
-
-</LinearLayout>
+    </LinearLayout>
