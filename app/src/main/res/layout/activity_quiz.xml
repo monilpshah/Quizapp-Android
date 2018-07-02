@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/quiz"
+    android:orientation="vertical"
     tools:context=".QuizActivity">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,6 +40,7 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
+
             <RadioGroup
                 android:id="@+id/first"
                 android:layout_width="wrap_content"
@@ -50,29 +51,29 @@
                     android:id="@+id/A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.    Apple" />
+                    android:text="A.    Apple"
+                    android:textColor="#ffffff" />
 
                 <RadioButton
                     android:id="@+id/B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    Google" />
+                    android:text="B.    Google"
+                    android:textColor="#ffffff" />
 
                 <RadioButton
                     android:id="@+id/C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="C.    Android Inc." />
+                    android:text="C.    Android Inc."
+                    android:textColor="#ffffff" />
 
                 <RadioButton
                     android:id="@+id/D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="D.    Nokia" />
+                    android:text="D.    Nokia"
+                    android:textColor="#ffffff" />
             </RadioGroup>
 
             <TextView
@@ -86,36 +87,48 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <RadioGroup
-                android:id="@+id/second"
+            <!--<RadioGroup-->
+            <!--android:id="@+id/second"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp">-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="A.    Apple" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="B.    No company" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text=" C.   Nokia" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="D.    Google" />-->
+            <!--</RadioGroup>-->
+
+            <EditText
+                android:id="@+id/secondedittext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.    Apple" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    No company" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text=" C.   Nokia" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textColor="#ffffff"
-                    android:text="D.    Google" />
-            </RadioGroup>
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textColor="#EBECF2"
+                android:textColorHint="#EBECF2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -128,36 +141,61 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <RadioGroup
-                android:id="@+id/third"
+            <!--<RadioGroup-->
+            <!--android:id="@+id/third"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp">-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="A.    Chrome" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="B.    Firefox" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="C.   Open-source Webkit" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="D.    Opera" />-->
+            <!--</RadioGroup>-->
+
+            <CheckBox
+                android:id="@+id/chrome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
+                android:text="A.    Chrome" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.    Chrome" />
+            <CheckBox
+                android:id="@+id/firefox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B.    Firefox" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    Firefox" />
+            <CheckBox
+                android:id="@+id/opensource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkboxclick"
+                android:text="C.    Open-Source Webkit" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="C.   Open-source Webkit" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textColor="#ffffff"
-                    android:text="D.    Opera" />
-            </RadioGroup>
+            <CheckBox
+                android:id="@+id/opera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D.    Opera" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -170,36 +208,61 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <RadioGroup
-                android:id="@+id/four"
+            <!--<RadioGroup-->
+            <!--android:id="@+id/four"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp">-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="A.    Linux kernel" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="B.    Windows kernel" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="C.   MAC kernel" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="D.    Hybrid Kernel" />-->
+            <!--</RadioGroup>-->
+
+            <CheckBox
+                android:id="@+id/linux"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
+                android:onClick="checkboxclick"
+                android:text="A.    Linux Kernal" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.    Linux kernel" />
+            <CheckBox
+                android:id="@+id/window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B.    Windows Kernal" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    Windows kernel" />
+            <CheckBox
+                android:id="@+id/mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C.    MAC Kernal" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="C.   MAC kernel" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textColor="#ffffff"
-                    android:text="D.    Hybrid Kernel" />
-            </RadioGroup>
+            <CheckBox
+                android:id="@+id/hybrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D.    Hybrid Kernal" />
 
 
             <TextView
@@ -213,253 +276,68 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <RadioGroup
-                android:id="@+id/five"
+            <!--<RadioGroup-->
+            <!--android:id="@+id/five"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp">-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="A.    Yes" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="B.    No" />-->
+
+            <!--</RadioGroup>-->
+
+            <EditText
+                android:id="@+id/yesno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.    Yes" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    No" />
-
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="yes or no"
+                android:inputType="textPersonName"
                 android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="6. Android is based on which language."
-                android:textColor="#00BCD4"
-                android:textSize="30dp" />
+                android:text=""
+                android:textColor="#EBECF2"
+                android:textColorHint="#EBECF2" />
 
-            <RadioGroup
-                android:id="@+id/six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.    C" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    C++" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="C.    VC++" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="D.    Java" />
-
-            </RadioGroup>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="7. Is Android hack proof?"
-                android:textColor="#00BCD4"
-                android:textSize="30dp" />
-
-            <RadioGroup
-                android:id="@+id/seven"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.    Yes" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    No" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="8. Which is the latest mobile version of android?"
-                android:textColor="#00BCD4"
-                android:textSize="30dp" />
-
-            <RadioGroup
-                android:id="@+id/eight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.     3.0 (Honeycomb)" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    2.3 (Gingerbread)" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="C.    2.6" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="D.    2.2 (Froyo)" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="9. What is android?"
-                android:textColor="#00BCD4"
-                android:textSize="30dp" />
-
-            <RadioGroup
-                android:id="@+id/nine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.     Desktop Operating System" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    Programming Language" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="C.    Mobile Operating System" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="D.    Database" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="10. Android doesn't support which format."
-                android:textColor="#00BCD4"
-                android:textSize="30dp" />
-
-            <RadioGroup
-                android:id="@+id/ten"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="A.     MP4" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="B.    MPEG" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="C.    AVG" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:text="D.    MIDI" />
-            </RadioGroup>
 
             <Button
                 android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#0000FF"
                 android:onClick="submit"
                 android:paddingLeft="10dp"
                 android:text="Submit"
-                android:background="#0000FF"
                 android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/score"
-                android:enabled="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/congo"
+                android:enabled="false"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="10dp"
                 android:text=""
-                android:background="@drawable/congo"
                 android:textColor="#000000"
                 android:textSize="30sp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="share"
                 android:background="#0000FF"
+                android:onClick="share"
                 android:paddingLeft="10dp"
                 android:text="Share"
                 android:textColor="#FFFFFF" />
