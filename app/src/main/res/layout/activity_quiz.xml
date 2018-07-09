@@ -51,6 +51,7 @@
                     android:id="@+id/A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="check"
                     android:text="A.    Apple"
                     android:textColor="#ffffff" />
 
@@ -58,6 +59,7 @@
                     android:id="@+id/B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="check"
                     android:text="B.    Google"
                     android:textColor="#ffffff" />
 
@@ -65,6 +67,7 @@
                     android:id="@+id/C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="check"
                     android:text="C.    Android Inc."
                     android:textColor="#ffffff" />
 
@@ -72,6 +75,7 @@
                     android:id="@+id/D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="check"
                     android:text="D.    Nokia"
                     android:textColor="#ffffff" />
             </RadioGroup>
@@ -87,36 +91,6 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <!--<RadioGroup-->
-            <!--android:id="@+id/second"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="10dp">-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="A.    Apple" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="B.    No company" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text=" C.   Nokia" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="D.    Google" />-->
-            <!--</RadioGroup>-->
 
             <EditText
                 android:id="@+id/secondedittext"
@@ -141,36 +115,6 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <!--<RadioGroup-->
-            <!--android:id="@+id/third"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="10dp">-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="A.    Chrome" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="B.    Firefox" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="C.   Open-source Webkit" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="D.    Opera" />-->
-            <!--</RadioGroup>-->
 
             <CheckBox
                 android:id="@+id/chrome"
@@ -208,36 +152,6 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <!--<RadioGroup-->
-            <!--android:id="@+id/four"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="10dp">-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="A.    Linux kernel" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="B.    Windows kernel" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="C.   MAC kernel" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="D.    Hybrid Kernel" />-->
-            <!--</RadioGroup>-->
 
             <CheckBox
                 android:id="@+id/linux"
@@ -276,25 +190,6 @@
                 android:textColor="#00BCD4"
                 android:textSize="30dp" />
 
-            <!--<RadioGroup-->
-            <!--android:id="@+id/five"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="10dp">-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="A.    Yes" />-->
-
-            <!--<RadioButton-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:text="B.    No" />-->
-
-            <!--</RadioGroup>-->
 
             <EditText
                 android:id="@+id/yesno"
@@ -314,7 +209,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#0000FF"
-                android:onClick="submit"
+                android:onClick="onClick"
                 android:paddingLeft="10dp"
                 android:text="Submit"
                 android:textColor="#FFFFFF" />
@@ -324,7 +219,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/congo"
-                android:enabled="false"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"

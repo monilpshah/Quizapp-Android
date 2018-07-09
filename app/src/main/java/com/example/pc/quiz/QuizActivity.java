@@ -12,80 +12,109 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class QuizActivity extends AppCompatActivity {
+public class QuizActivity extends AppCompatActivity implements View.OnClickListener {
 
     int score = 0;
-    String ans1 = "",
-            ans2 = "",
+    String ans2 = "",
             ans5 = "";
     EditText name, ans5text;
+    private RadioButton b;
+    RadioGroup first;
+    int selected1;
+    TextView scoremsg;
+    Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        initView();
     }
 
-    void check() {
+    private void initView() {
+        first = (RadioGroup) findViewById(R.id.first);
+        selected1 = first.getCheckedRadioButtonId();
+        b = (RadioButton) findViewById(selected1);
+
+        scoremsg = (TextView) findViewById(R.id.score);
+//        submit = (Button) findViewById(R.id.submit);
+//        submit.setOnClickListener(this);
+    }
+
+    void check(View view) {
         //first ans
-        RadioGroup first = (RadioGroup) findViewById(R.id.first);
-        int selected1 = first.getCheckedRadioButtonId();
-        RadioButton b = (RadioButton) findViewById(selected1);
-        ans1 = b.getText() + "";
-        if (ans1.equals("B.    Google")) {
-            score++;
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.A:
+                if (checked)
+                    break;
+            case R.id.B:
+                if (checked) {
+                    score++;
+                    break;
+                }
+            case R.id.C:
+                if (checked)
+                    break;
+            case R.id.D:
+                if (checked)
+                    break;
+
         }
 
+    }
+
+    void Edittext2() {
         //second ans
 
-        name = (EditText) findViewById(R.id.etName);
+        name = (EditText) findViewById(R.id.secondedittext);
         ans2 = name.getText().toString();
+
         if (ans2.equals("google")) {
             score++;
         }
+    }
 
-        //third ans
-
-
-        //four ans
-
-        //five ans
-
-        ans5text = (EditText) findViewById(R.id.etName);
+    void Edittext3() {
+        ans5text = (EditText) findViewById(R.id.yesno);
         ans5 = ans5text.getText().toString();
         if (ans5.equals("yes")) {
             score++;
         }
-
     }
 
+
+    //
     public void checkboxclick(View view) {
-        // Is the view now checked?
+
         boolean checked = ((CheckBox) view).isChecked();
         if (checked) {
             score++;
         }
     }
 
-
-    @SuppressLint("SetTextI18n")
-    void submit(View view) {
-        check();
-        TextView scoremsg = (TextView) findViewById(R.id.score);
-        scoremsg.setEnabled(true);
-        if(score==5){
+    @Override
+    public void onClick(View view) {
+        Edittext2();
+        Edittext3();
+        if (score ==5) {
             scoremsg.setText("GENIUS You scored " + score + " mark in Android Quiz");
+        }
+        else if(score==0){
+            scoremsg.setText("OOPS! You scored " + score + " mark \n \n \n Better Luck Next time");
         }
         else {
             scoremsg.setText("Congratulations! You scored " + score + " mark");
         }
-        Button submit= (Button) findViewById(R.id.submit);
-        submit.setEnabled(false);
 
     }
 
+
     void share(View view) {
         //share code
+
         String message = "I scored " + score + " mark in Android Quiz";
         Intent share = new Intent(Intent.ACTION_SEND);
         share.setType("text/plain");
@@ -95,4 +124,5 @@ public class QuizActivity extends AppCompatActivity {
 
         //share code closed
     }
+
 }
