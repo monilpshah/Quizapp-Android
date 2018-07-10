@@ -67,14 +67,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-//
-//    public void check() {
-//        RadioButton questionOne = findViewById(R.id.B);
-//        if (questionOne.isChecked()){
-//            score++;
-//        }
-//    }
-
     void Edittext2() {
         //second ans
 
