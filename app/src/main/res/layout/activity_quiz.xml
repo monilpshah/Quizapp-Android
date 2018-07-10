@@ -26,7 +26,7 @@
                 android:paddingTop="10dp"
                 android:text="Take the Biz ... QUIZ!"
                 android:textColor="#F44336"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
 
             <TextView
@@ -38,7 +38,7 @@
                 android:paddingTop="10dp"
                 android:text="1. Which company developed android?"
                 android:textColor="#00BCD4"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
 
             <RadioGroup
@@ -89,7 +89,7 @@
                 android:paddingTop="10dp"
                 android:text="2. Which company bought android?"
                 android:textColor="#00BCD4"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
 
             <EditText
@@ -113,7 +113,7 @@
                 android:paddingTop="10dp"
                 android:text="3. Web browser available in android is based on"
                 android:textColor="#00BCD4"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
 
             <CheckBox
@@ -132,7 +132,6 @@
                 android:id="@+id/opensource"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="checkboxclick"
                 android:text="C.    Open-Source Webkit" />
 
             <CheckBox
@@ -150,14 +149,13 @@
                 android:paddingTop="10dp"
                 android:text="4. Android is based on which kernel?"
                 android:textColor="#00BCD4"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
 
             <CheckBox
                 android:id="@+id/linux"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="checkboxclick"
                 android:text="A.    Linux Kernal" />
 
             <CheckBox
@@ -188,7 +186,7 @@
                 android:paddingTop="10dp"
                 android:text="5. Is Android available in ROM?"
                 android:textColor="#00BCD4"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
 
             <EditText
